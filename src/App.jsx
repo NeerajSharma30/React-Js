@@ -11,6 +11,8 @@ import SimpleForms from "./All Topics/07_Forms/SimpleForms";
 import MultiInputForm from "./All Topics/07_Forms/MultiInputForm";
 import AdvancedForm from "./All Topics/07_Forms/AdvancedForm";
 import BasicValidationForms from "./All Topics/07_Forms/BasicValidationForms";
+import First from "./All Topics/09_UseEffect/First";
+import FetchingApi from "./All Topics/09_UseEffect/FetchingApi";
 
 const App = () => {
   return (
@@ -32,8 +34,11 @@ const App = () => {
 
      <SimpleForms/>
       <MultiInputForm />
-      <AdvancedForm />*/}
+      <AdvancedForm />
       <BasicValidationForms />
+
+      <First />*/}
+      <FetchingApi />
     </>
   );
 };
