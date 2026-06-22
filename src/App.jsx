@@ -1,3 +1,10 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
 import React from "react";
 import ArrayPractice1 from "./All Topics/03Objects/ArrayPractice1";
 import Pros1 from "./All Topics/05_Props/Pros1";
@@ -13,8 +20,21 @@ import AdvancedForm from "./All Topics/07_Forms/AdvancedForm";
 import BasicValidationForms from "./All Topics/07_Forms/BasicValidationForms";
 import First from "./All Topics/09_UseEffect/First";
 import FetchingApi from "./All Topics/09_UseEffect/FetchingApi";
+import Home from "./All Topics/10_Routs/Home";
+import About from "./All Topics/10_Routs/About";
+import Contect from "./All Topics/10_Routs/Contect";
 
 const App = () => {
+  function User() {
+    console.log(useParams());
+    const {id} = useParams()
+    return <h2>User Profile For ID: {id}</h2>
+    
+  }
+
+  function Notfound(){
+    return <h1>404 Page Note Found</h1>
+  }
   return (
     <>
       {/* <ArrayPractice1 /> 
@@ -37,8 +57,22 @@ const App = () => {
       <AdvancedForm />
       <BasicValidationForms />
 
-      <First />*/}
-      <FetchingApi />
+      <First />
+      <FetchingApi />*/}
+
+      <BrowserRouter>
+        <h1>React OUTER EXAMPLE </h1>
+        <Link to="/">Home</Link>|<Link to="/about">About</Link>|
+        <Link to="/contect">Contect Us</Link>
+        <Link to="/user/10">User</Link>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contect" element={<Contect />} />
+          <Route path="/user/:id" element={<User />} />
+          <Route path="*" element={<Notfoundelcom to home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
