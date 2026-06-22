@@ -27,13 +27,12 @@ import Contect from "./All Topics/10_Routs/Contect";
 const App = () => {
   function User() {
     console.log(useParams());
-    const {id} = useParams()
-    return <h2>User Profile For ID: {id}</h2>
-    
+    const { id } = useParams();
+    return <h2>User Profile For ID: {id}</h2>;
   }
 
-  function Notfound(){
-    return <h1>404 Page Note Found</h1>
+  function Notfound() {
+    return <h1>404 Page Note Found</h1>;
   }
   return (
     <>
@@ -58,7 +57,7 @@ const App = () => {
       <BasicValidationForms />
 
       <First />
-      <FetchingApi />*/}
+      <FetchingApi />
 
       <BrowserRouter>
         <h1>React OUTER EXAMPLE </h1>
@@ -70,9 +69,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contect" element={<Contect />} />
           <Route path="/user/:id" element={<User />} />
-          <Route path="*" element={<Notfoundelcom to home />} />
+          <Route path="*" element={<User />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>*/}
     </>
   );
 };
