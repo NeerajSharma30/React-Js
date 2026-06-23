@@ -24,6 +24,7 @@ import Home from "./All Topics/10_Routs/Home";
 import About from "./All Topics/10_Routs/About";
 import Contect from "./All Topics/10_Routs/Contect";
 import Timer from "./All Topics/12_UseEffectEvent/Timer";
+import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
 
 const App = () => {
   {
@@ -74,9 +75,10 @@ const App = () => {
           <Route path="/user/:id" element={<User />} />
           <Route path="*" element={<User />} />
         </Routes>
-      </BrowserRouter>*/}
+      </BrowserRouter>
 
-      <Timer />
+      <Timer />*/}
+      <AutoSaveForm />
     </>
   );
 };
