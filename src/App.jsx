@@ -25,6 +25,7 @@ import About from "./All Topics/10_Routs/About";
 import Contect from "./All Topics/10_Routs/Contect";
 import Timer from "./All Topics/12_UseEffectEvent/Timer";
 import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
+import Context from "./All Topics/16_UseContextHook/Context";
 
 const App = () => {
   {
@@ -80,7 +81,9 @@ const App = () => {
       <Timer />
       <AutoSaveForm />*/}
 
-      
+      <UserContext.Provider>
+        <Context />
+      </UserContext.Provider>
     </>
   );
 };
