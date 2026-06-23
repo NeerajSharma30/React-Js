@@ -23,9 +23,11 @@ import FetchingApi from "./All Topics/09_UseEffect/FetchingApi";
 import Home from "./All Topics/10_Routs/Home";
 import About from "./All Topics/10_Routs/About";
 import Contect from "./All Topics/10_Routs/Contect";
+import Timer from "./All Topics/12_UseEffectEvent/Timer";
 
 const App = () => {
-  function User() {
+  {
+    /* function User() {
     console.log(useParams());
     const { id } = useParams();
     return <h2>User Profile For ID: {id}</h2>;
@@ -33,6 +35,7 @@ const App = () => {
 
   function Notfound() {
     return <h1>404 Page Note Found</h1>;
+  }*/
   }
   return (
     <>
@@ -72,6 +75,8 @@ const App = () => {
           <Route path="*" element={<User />} />
         </Routes>
       </BrowserRouter>*/}
+
+      <Timer />
     </>
   );
 };
