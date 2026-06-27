@@ -6,6 +6,7 @@ import {
   useParams,
 } from "react-router-dom";
 import React from "react";
+import { createContext, useContext } from "react";
 import ArrayPractice1 from "./All Topics/03Objects/ArrayPractice1";
 import Pros1 from "./All Topics/05_Props/Pros1";
 import States from "./All Topics/06_usestate/States";
@@ -25,7 +26,8 @@ import About from "./All Topics/10_Routs/About";
 import Contect from "./All Topics/10_Routs/Contect";
 import Timer from "./All Topics/12_UseEffectEvent/Timer";
 import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
-import Context from "./All Topics/16_UseContextHook/Context";
+import Parent from "./All Topics/16_UseContextHook/Parent";
+
 
 const App = () => {
   {
@@ -81,9 +83,7 @@ const App = () => {
       <Timer />
       <AutoSaveForm />*/}
 
-      <UserContext.Provider>
-        <Context />
-      </UserContext.Provider>
+      <Parent />
     </>
   );
 };

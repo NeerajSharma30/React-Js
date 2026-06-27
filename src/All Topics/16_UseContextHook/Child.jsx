@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import GrandChild from "./GrandChild";
 
 const Child = () => {
   return (
-    <div>Child</div>
-  )
-}
+    <>
+      <h1>Child</h1>
+      <GrandChild />
+    </>
+  );
+};
 
-export default Child
+export default Child;

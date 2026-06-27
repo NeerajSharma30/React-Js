@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { UserContext } from "./Parent";
 
 const GrandChild = () => {
+  const user = useContext(UserContext);
   return (
-    <div>GrandChild</div>
-  )
-}
+    <>
+      <h1>{user} GrandChild</h1>
+    </>
+  );
+};
 
-export default GrandChild
+export default GrandChild;
