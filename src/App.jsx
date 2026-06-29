@@ -27,6 +27,7 @@ import Contect from "./All Topics/10_Routs/Contect";
 import Timer from "./All Topics/12_UseEffectEvent/Timer";
 import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
 import Parent from "./All Topics/16_UseContextHook/Parent";
+import TheamContext from "./All Topics/16_UseContextHook/TheamChanging/TheamContext";
 
 
 const App = () => {
@@ -81,9 +82,11 @@ const App = () => {
       </BrowserRouter>
 
       <Timer />
-      <AutoSaveForm />*/}
+      <AutoSaveForm />
 
-      <Parent />
+      <Parent />*/}
+
+      <TheamContext/>
     </>
   );
 };
