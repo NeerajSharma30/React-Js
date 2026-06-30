@@ -28,7 +28,7 @@ import Timer from "./All Topics/12_UseEffectEvent/Timer";
 import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
 import Parent from "./All Topics/16_UseContextHook/Parent";
 import TheamContext from "./All Topics/16_UseContextHook/TheamChanging/TheamContext";
-
+import Reducer from "./All Topics/18_UseReducer/Reducer";
 
 const App = () => {
   {
@@ -84,9 +84,11 @@ const App = () => {
       <Timer />
       <AutoSaveForm />
 
-      <Parent />*/}
+      <Parent />
 
-      <TheamContext/>
+      <TheamContext/>*/}
+
+      <Reducer />
     </>
   );
 };
