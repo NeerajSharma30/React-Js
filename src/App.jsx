@@ -30,6 +30,7 @@ import Parent from "./All Topics/16_UseContextHook/Parent";
 import TheamContext from "./All Topics/16_UseContextHook/TheamChanging/TheamContext";
 import Reducer from "./All Topics/18_UseReducer/Reducer";
 import UseMemo from "./All Topics/19_UseMemo/UseMemo";
+import CallBack from "./All Topics/20_UseCallback/CallBack";
 
 const App = () => {
   {
@@ -89,9 +90,11 @@ const App = () => {
 
       <TheamContext/>
 
-      <Reducer />*/}
+      <Reducer />
 
-      <UseMemo />
+      <UseMemo/>*/}
+
+      <CallBack/>
     </>
   );
 };
