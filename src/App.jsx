@@ -29,6 +29,7 @@ import AutoSaveForm from "./All Topics/12_UseEffectEvent/AutoSaveForm";
 import Parent from "./All Topics/16_UseContextHook/Parent";
 import TheamContext from "./All Topics/16_UseContextHook/TheamChanging/TheamContext";
 import Reducer from "./All Topics/18_UseReducer/Reducer";
+import UseMemo from "./All Topics/19_UseMemo/UseMemo";
 
 const App = () => {
   {
@@ -86,9 +87,11 @@ const App = () => {
 
       <Parent />
 
-      <TheamContext/>*/}
+      <TheamContext/>
 
-      <Reducer />
+      <Reducer />*/}
+
+      <UseMemo />
     </>
   );
 };
