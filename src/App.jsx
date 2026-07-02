@@ -31,6 +31,7 @@ import TheamContext from "./All Topics/16_UseContextHook/TheamChanging/TheamCont
 import Reducer from "./All Topics/18_UseReducer/Reducer";
 import UseMemo from "./All Topics/19_UseMemo/UseMemo";
 import CallBack from "./All Topics/20_UseCallback/CallBack";
+import UseLayoutEffect from "./All Topics/21UseLayOut Effect/UseLayoutEffect";
 
 const App = () => {
   {
@@ -92,9 +93,10 @@ const App = () => {
 
       <Reducer />
 
-      <UseMemo/>*/}
+      <UseMemo/>
+      <CallBack/>*/}
 
-      <CallBack/>
+      <UseLayoutEffect />
     </>
   );
 };
